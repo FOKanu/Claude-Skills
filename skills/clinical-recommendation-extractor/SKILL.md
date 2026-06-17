@@ -55,9 +55,63 @@ The user should provide one or more of:
 
 If critical information is missing, ask clarifying questions before proceeding.
 
+## Context Intake (Mandatory Before Planning)
+
+Before creating any implementation plan, collect institution-specific context.
+If the user asks for a plan immediately, pause and ask targeted discovery
+questions first.
+
+Minimum context to collect:
+
+- Facility profile (hospital type, size, inpatient/outpatient mix)
+- Care setting and service lines affected (ED, ICU, ambulatory, etc.)
+- Patient population and case complexity
+- Current-state workflow and baseline performance
+- Existing technology stack (EHR, integrations, medical devices, analytics)
+- Staffing model and available implementation capacity
+- Budget constraints and procurement limits
+- Regulatory/compliance constraints and internal policy requirements
+- Timeline constraints and executive priorities
+- Implementation owner, governance structure, and decision rights
+
+Use this question bank when details are missing:
+
+1. What type of institution is this (academic medical center, community
+   hospital, clinic network), and approximately how large is it?
+2. Which departments and care settings will be in scope for this plan?
+3. What is the primary patient population and any high-risk segments?
+4. What does the current workflow look like today, and where are the biggest
+   pain points?
+5. Which systems must this plan integrate with (EHR, LIS, RIS, billing, etc.)?
+6. What staffing capacity is available for implementation over the next 90 days?
+7. What budget guardrails or procurement constraints should be assumed?
+8. Are there regulatory, accreditation, or internal policy constraints we must
+   satisfy?
+9. Who are the executive sponsor and operational owner, and how are decisions
+   approved?
+10. What outcomes matter most in the first 30 days (safety, throughput, cost,
+    adoption, patient experience)?
+
+If the user cannot provide all answers:
+
+- Continue with best-effort planning.
+- Add an assumptions section to the output.
+- Label each assumption with confidence (high/medium/low).
+- Flag high-impact unknowns as blockers or validation checkpoints.
+
 ## Workflow
 
-### Step 1: Clinical Objective
+### Step 1: Institution Context Profile
+
+Synthesize responses into a concise context profile that includes:
+
+- Institution characteristics
+- Scope boundaries
+- Operational constraints
+- Technology and data dependencies
+- Governance and ownership model
+
+### Step 2: Clinical Objective
 
 Determine:
 
@@ -65,7 +119,7 @@ Determine:
 - Target population
 - Intended outcomes
 
-### Step 2: Recommendation Extraction
+### Step 3: Recommendation Extraction
 
 Identify:
 
@@ -74,7 +128,7 @@ Identify:
 - Best-practice guidance
 - Required workflow changes
 
-### Step 3: Stakeholder Identification
+### Step 4: Stakeholder Identification
 
 Identify all relevant stakeholders:
 
@@ -87,7 +141,7 @@ Identify all relevant stakeholders:
 - Patients
 - External vendors
 
-### Step 4: Resource Assessment
+### Step 5: Resource Assessment
 
 Identify required:
 
@@ -97,7 +151,7 @@ Identify required:
 - Training
 - Budget considerations
 
-### Step 5: Barrier Assessment
+### Step 6: Barrier Assessment
 
 Identify:
 
@@ -107,7 +161,7 @@ Identify:
 - Organizational resistance
 - Resource constraints
 
-### Step 6: Success Metrics
+### Step 7: Success Metrics
 
 Extract or infer:
 
@@ -116,7 +170,7 @@ Extract or infer:
 - Adoption KPIs
 - Patient outcome metrics
 
-### Step 7: Implementation Roadmap
+### Step 8: Implementation Roadmap
 
 Generate:
 
@@ -162,6 +216,17 @@ the most defensible interpretation.
 Produce output using this exact structure:
 
 # Clinical Implementation Brief
+
+## Context Profile & Assumptions
+
+### Confirmed Institution Inputs
+
+...
+
+### Assumptions (if any)
+
+| Assumption | Why Needed | Confidence | Validation Needed |
+|------------|------------|------------|-------------------|
 
 ## Executive Summary
 
@@ -233,6 +298,8 @@ Provide a concise overview.
 
 Before finalizing, confirm:
 
+- Institution-specific context was collected before planning.
+- Any missing context is captured as explicit assumptions.
 - All major recommendations were extracted.
 - Stakeholders were identified.
 - Resource requirements were assessed.

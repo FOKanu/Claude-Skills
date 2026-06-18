@@ -89,14 +89,6 @@ The design approach emphasized:
 
 This research-informed approach reflects how teams are increasingly productionizing AI support: by encoding expert workflows into stable, versioned skill assets.
 
-## Recruiter / Hiring Manager Relevance
-
-This repository demonstrates applied strengths in:
-
-- AI workflow design and prompt systems engineering
-- Knowledge operationalization (turning messy input into executable plans)
-- Product-minded documentation and output contracts
-- Enterprise readiness (repeatability, governance, auditability)
 
 Rather than showcasing isolated prompts, this work shows how to build AI capabilities that can be adopted by teams, scaled across use cases, and maintained over time.
 
